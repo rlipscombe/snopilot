@@ -1,0 +1,39 @@
+Microsoft Visual Studio Solution File, Format Version 8.00
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "dump_nmea", "dump_nmea.vcproj", "{C45DE827-722A-40FD-81B3-2F8281B3E83D}"
+	ProjectSection(ProjectDependencies) = postProject
+		{D20A2033-4BEB-45AE-B55F-5170A877734F} = {D20A2033-4BEB-45AE-B55F-5170A877734F}
+		{02A08749-A67C-4074-9578-6EDF20B7DF64} = {02A08749-A67C-4074-9578-6EDF20B7DF64}
+	EndProjectSection
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "snopilot_core", "..\..\lib\core\snopilot_core.vcproj", "{02A08749-A67C-4074-9578-6EDF20B7DF64}"
+	ProjectSection(ProjectDependencies) = postProject
+	EndProjectSection
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "snopilot_gps", "..\..\lib\gps\snopilot_gps.vcproj", "{D20A2033-4BEB-45AE-B55F-5170A877734F}"
+	ProjectSection(ProjectDependencies) = postProject
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfiguration) = preSolution
+		Debug = Debug
+		Release = Release
+	EndGlobalSection
+	GlobalSection(ProjectConfiguration) = postSolution
+		{C45DE827-722A-40FD-81B3-2F8281B3E83D}.Debug.ActiveCfg = Debug|Win32
+		{C45DE827-722A-40FD-81B3-2F8281B3E83D}.Debug.Build.0 = Debug|Win32
+		{C45DE827-722A-40FD-81B3-2F8281B3E83D}.Release.ActiveCfg = Release|Win32
+		{C45DE827-722A-40FD-81B3-2F8281B3E83D}.Release.Build.0 = Release|Win32
+		{02A08749-A67C-4074-9578-6EDF20B7DF64}.Debug.ActiveCfg = Debug|Win32
+		{02A08749-A67C-4074-9578-6EDF20B7DF64}.Debug.Build.0 = Debug|Win32
+		{02A08749-A67C-4074-9578-6EDF20B7DF64}.Release.ActiveCfg = Release|Win32
+		{02A08749-A67C-4074-9578-6EDF20B7DF64}.Release.Build.0 = Release|Win32
+		{D20A2033-4BEB-45AE-B55F-5170A877734F}.Debug.ActiveCfg = Debug|Win32
+		{D20A2033-4BEB-45AE-B55F-5170A877734F}.Debug.Build.0 = Debug|Win32
+		{D20A2033-4BEB-45AE-B55F-5170A877734F}.Release.ActiveCfg = Release|Win32
+		{D20A2033-4BEB-45AE-B55F-5170A877734F}.Release.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+	EndGlobalSection
+	GlobalSection(ExtensibilityAddIns) = postSolution
+	EndGlobalSection
+EndGlobal
