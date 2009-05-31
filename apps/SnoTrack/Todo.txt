@@ -1,0 +1,33 @@
+DONE:
+=====
+
+1.5d (.5d	Drawing labels on lifts: always above the line, rotated so it's still readable.  Hide them past a certain zoom level.)
+1d (1d	Scale in the corner of the screen (with opaque background))
+.5d (.5d	Bug: enter/exit times appear to be bogus sometimes)
+.5d (.5d	Bug: enter/exit times don't appear to match the timeline)
+.5d (.5d	Bug: matched paths -- doesn't match against final hotspot)
+.5d (.5d	Matched paths: display elapsed time)
+.5d (open resort: same path as last time / save resort: same name as last time / new file/resort: same path as (open resort))
+.5d	(Checkbox on path definition: hide tracklog that matches (for lifts))
+.5d (Hiding matched paths and lifts.)
+.5d (.5d import tracklog/waypoints from CSV: remember path / export tracklog/waypoints: same path as import / import NMEA / snolog)
+.5d (1d	Path times should be (exit first spot) -> enter last)
+1d  (Drawing the c.o.g. of hotspots.)
+1.5d (1d Straight line speed approximation for matched path => speed (using c.o.g. of hotspot squares))
+.5d (.5d	Leaving/reentering same hotspot => same hotspot)
+.5d (Bug: single spot paths cause infinite loop.  Also test with no-spot paths.)
+3.5d (1.5d Timeline: selection)
+1d (Design mode: drag to lay out hotspots -- big splots instead)
+.5d: 3. File properties
+.5d: 1. Named hotspots
+.5d: 2. Timeline unhide everything
+
+TODO:
+=====
+
+DONTDO:
+=======
+
+1d	Splitter: it's hard to grab if you've dragged it all of the way to the edge
+Tooltips in the timeline
+.5d	File MRU: popup menu

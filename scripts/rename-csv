@@ -1,0 +1,12 @@
+#!/bin/sh
+
+for i in $1 ; do
+	PREFIX=`echo $i | sed 's@\(.*\)-\(.*\)-.*\.csv@\2-\1@'`
+	START_TIME=`head -2 $i | tail -1 | cut -d, -f10 | awk -F '[ :]'  '{ print $3"12"$2"."$4$5$6 }'`
+	END_TIME=`tail -1 $i | cut -d, -f10 | awk -F '[ :]' '{ print $3"12"$2"."$4$5$6 }'`
+
+	DEST=$PREFIX-$START_TIME-$END_TIME.csv
+	
+	echo $i : $DEST
+	mv "$i" "$DEST"
+done
