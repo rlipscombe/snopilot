@@ -1,0 +1,1223 @@
+// Microsoft Visual C++ generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// English (U.S.) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+#pragma code_page(1252)
+#endif //_WIN32
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDR_MAINFRAME           ICON                    "res\\SnoTrack.ico"
+IDR_SNOTRACKTYPE        ICON                    "res\\SnoTrackDoc.ico"
+IDR_STARTPAGEVIEW       ICON                    "res\\StartPageView.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Bitmap
+//
+
+IDR_MAINFRAME           BITMAP                  "res\\Toolbar.bmp"
+IDB_IMPORT_SERIAL_HEADER BITMAP                  "res\\import_serial_header.bmp"
+IDB_IMPORT_SERIAL_WATERMARK BITMAP                  "res\\import_serial_watermark.bmp"
+IDB_NEW_FILE_WATERMARK  BITMAP                  "res\\new_file_watermark.bmp"
+IDB_NEW_FILE_HEADER     BITMAP                  "res\\new_file_header.bmp"
+IDR_TIMELINE            BITMAP                  "res\\timeline.bmp"
+IDB_MAINFRAME32         BITMAP                  "res\\mainframe32.bmp"
+IDB_TIMELINE32          BITMAP                  "res\\timeline32.bmp"
+IDB_EVENT_ICONS         BITMAP                  "res\\event_icons.bmp"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Toolbar
+//
+
+IDR_MAINFRAME TOOLBAR  16, 15
+BEGIN
+    BUTTON      ID_FILE_NEW
+    BUTTON      ID_FILE_OPEN
+    BUTTON      ID_FILE_SAVE
+    SEPARATOR
+    BUTTON      ID_MODE_CENTER
+    BUTTON      ID_MODE_ZOOMIN
+    BUTTON      ID_MODE_ZOOMOUT
+    SEPARATOR
+    BUTTON      ID_VIEW_ROTATECCW
+    BUTTON      ID_VIEW_ROTATECW
+    SEPARATOR
+    BUTTON      ID_APP_ABOUT
+END
+
+IDR_TIMELINE TOOLBAR  16, 15
+BEGIN
+    BUTTON      ID_VIEW_ZOOMIN
+    BUTTON      ID_VIEW_ZOOMOUT
+    SEPARATOR
+    BUTTON      ID_VIEW_UNHIDE
+    BUTTON      ID_VIEW_HIDE
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Menu
+//
+
+IDR_MAINFRAME MENU 
+BEGIN
+    POPUP "&File"
+    BEGIN
+        MENUITEM "&New\tCtrl+N",                ID_FILE_NEW
+        MENUITEM "&Open...\tCtrl+O",            ID_FILE_OPEN
+        MENUITEM SEPARATOR
+        MENUITEM "Recent File",                 ID_FILE_MRU_FILE1, GRAYED
+        MENUITEM SEPARATOR
+        MENUITEM "&Close",                      ID_FILE_CLOSE
+        MENUITEM "E&xit",                       ID_APP_EXIT
+    END
+    POPUP "&View"
+    BEGIN
+        MENUITEM "&Toolbar",                    ID_VIEW_TOOLBAR
+        MENUITEM "&Status Bar",                 ID_VIEW_STATUS_BAR
+    END
+    POPUP "&Help"
+    BEGIN
+        MENUITEM "&About SnoTrack...",          ID_APP_ABOUT
+    END
+END
+
+IDR_SNOTRACKTYPE MENU 
+BEGIN
+    POPUP "&File"
+    BEGIN
+        MENUITEM "&New\tCtrl+N",                ID_FILE_NEW
+        MENUITEM "&Open...\tCtrl+O",            ID_FILE_OPEN
+        MENUITEM "&Close",                      ID_FILE_CLOSE
+        MENUITEM "&Save\tCtrl+S",               ID_FILE_SAVE
+        MENUITEM "Save &As...",                 ID_FILE_SAVE_AS
+        MENUITEM SEPARATOR
+        MENUITEM "P&roperties\tAlt+Enter",      ID_FILE_PROPERTIES
+        MENUITEM SEPARATOR
+        POPUP "&Import"
+        BEGIN
+            MENUITEM "&Track Log From File...",     ID_IMPORT_TRACKLOGFROMFILE
+
+            MENUITEM "&Waypoints from File...",     ID_IMPORT_WAYPOINTSFROMFILE
+
+            MENUITEM SEPARATOR
+            MENUITEM "From &Serial Port...",        ID_IMPORT_SERIAL
+            MENUITEM SEPARATOR
+            MENUITEM "&NMEA From File...",          ID_IMPORT_NMEAFROMFILE
+            MENUITEM "From sno&log File...",        ID_IMPORT_FROMSNOLOGFILE
+        END
+        POPUP "&Export"
+        BEGIN
+            MENUITEM "&Track Log To File...",       ID_EXPORT_TRACKLOGTOFILE
+            MENUITEM "&Waypoints To File...",       ID_EXPORT_WAYPOINTSTOFILE
+
+        END
+        MENUITEM SEPARATOR
+        MENUITEM "&Upload File...",             ID_FILE_UPLOADFILE
+        MENUITEM SEPARATOR
+        MENUITEM "Recent File",                 ID_FILE_MRU_FILE1, GRAYED
+        MENUITEM SEPARATOR
+        MENUITEM "E&xit",                       ID_APP_EXIT
+    END
+    POPUP "&View"
+    BEGIN
+        MENUITEM "&Zoom In",                    ID_VIEW_ZOOMIN
+        MENUITEM "Zoom &Out",                   ID_VIEW_ZOOMOUT
+        MENUITEM SEPARATOR
+        MENUITEM "Rotate &CCW",                 ID_VIEW_ROTATECCW
+        MENUITEM "Rotate C&W",                  ID_VIEW_ROTATECW
+        MENUITEM SEPARATOR
+        MENUITEM "&Toolbar",                    ID_VIEW_TOOLBAR
+        MENUITEM "&Status Bar",                 ID_VIEW_STATUS_BAR
+        MENUITEM SEPARATOR
+        MENUITEM "O&ptions...",                 ID_VIEW_OPTIONS
+    END
+    POPUP "&Window"
+    BEGIN
+        MENUITEM "&New Window",                 ID_WINDOW_NEW
+        MENUITEM "&Cascade",                    ID_WINDOW_CASCADE
+        MENUITEM "&Tile",                       ID_WINDOW_TILE_HORZ
+        MENUITEM "&Arrange Icons",              ID_WINDOW_ARRANGE
+    END
+    POPUP "&Help"
+    BEGIN
+        MENUITEM "&About SnoTrack...",          ID_APP_ABOUT
+    END
+END
+
+#if defined(APSTUDIO_INVOKED) || defined(ENABLE_DESIGN_MODE)
+#if defined(APSTUDIO_INVOKED)
+IDR_DESIGN_MODE$(ENABLE_DESIGN_MODE) MENU 
+#else
+IDR_DESIGN_MODE MENU 
+#endif
+BEGIN
+    POPUP "&Resort"
+    BEGIN
+        MENUITEM "&New",                        ID_RESORT_NEW
+        MENUITEM "&Open...",                    ID_RESORT_OPEN
+        MENUITEM "Save &As...",                 ID_RESORT_SAVEAS
+        MENUITEM SEPARATOR
+        MENUITEM "&Define Hotspots",            ID_HOTSPOTS_DEFINEHOTSPOTS
+        MENUITEM "&Clear Hotspots",             ID_HOTSPOTS_CLEARHOTSPOTS
+        MENUITEM "Hotspot Nam&es",              ID_RESORT_HOTSPOTNAMES
+        MENUITEM SEPARATOR
+        MENUITEM "Select &ID...\tF7",           ID_HOTSPOTS_SELECTID
+        MENUITEM "Hotspot si&ze...",            ID_RESORT_HOTSPOTSIZE
+        MENUITEM SEPARATOR
+        MENUITEM "&Walk\tCtrl+F7",              ID_HOTSPOTS_WALK
+        MENUITEM SEPARATOR
+        MENUITEM "Edit &Paths",                 ID_HOTSPOTS_EDITPATHS
+        MENUITEM SEPARATOR
+        MENUITEM "Edit &Lifts",                 ID_RESORT_EDIT_LIFTS
+        MENUITEM "Edit Resort Wa&ypoints",      ID_RESORT_EDIT_WAYPOINTS
+        MENUITEM SEPARATOR
+        MENUITEM "&Hide Lifts",                 ID_RESORT_HIDELIFTS
+        MENUITEM "Hide &Matched Paths",         ID_RESORT_HIDEMATCHEDPATHS
+        MENUITEM "&Show All",                   ID_RESORT_SHOWALL
+        MENUITEM SEPARATOR
+        MENUITEM "&Recalculate Route",          ID_RESORT_RECALCULATEROUTES
+    END
+END
+#endif
+
+IDR_STARTPAGEVIEW MENU 
+BEGIN
+    POPUP "&File"
+    BEGIN
+        MENUITEM "&New\tCtrl+N",                ID_FILE_NEW
+        MENUITEM "&Open...\tCtrl+O",            ID_FILE_OPEN
+        MENUITEM "&Close",                      ID_FILE_CLOSE
+        MENUITEM "&Save\tCtrl+S",               ID_FILE_SAVE
+        MENUITEM "Save &As...",                 ID_FILE_SAVE_AS
+        MENUITEM SEPARATOR
+        MENUITEM "&Print...\tCtrl+P",           ID_FILE_PRINT
+        MENUITEM "Print Pre&view",              ID_FILE_PRINT_PREVIEW
+        MENUITEM "P&rint Setup...",             ID_FILE_PRINT_SETUP
+        MENUITEM SEPARATOR
+        MENUITEM "Recent File",                 ID_FILE_MRU_FILE1, GRAYED
+        MENUITEM SEPARATOR
+        MENUITEM "E&xit",                       ID_APP_EXIT
+    END
+    POPUP "&View"
+    BEGIN
+        MENUITEM "&Toolbar",                    ID_VIEW_TOOLBAR
+        MENUITEM "&Status Bar",                 ID_VIEW_STATUS_BAR
+    END
+    POPUP "&Window"
+    BEGIN
+        MENUITEM "&New Window",                 ID_WINDOW_NEW
+        MENUITEM "&Cascade",                    ID_WINDOW_CASCADE
+        MENUITEM "&Tile",                       ID_WINDOW_TILE_HORZ
+        MENUITEM "&Arrange Icons",              ID_WINDOW_ARRANGE
+    END
+    POPUP "&Help"
+    BEGIN
+        MENUITEM "&About...",                   ID_APP_ABOUT
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Accelerator
+//
+
+IDR_MAINFRAME ACCELERATORS 
+BEGIN
+    "N",            ID_FILE_NEW,            VIRTKEY, CONTROL, NOINVERT
+    "O",            ID_FILE_OPEN,           VIRTKEY, CONTROL, NOINVERT
+    VK_RETURN,      ID_FILE_PROPERTIES,     VIRTKEY, ALT, NOINVERT
+    "S",            ID_FILE_SAVE,           VIRTKEY, CONTROL, NOINVERT
+    VK_F6,          ID_NEXT_PANE,           VIRTKEY, NOINVERT
+    VK_F6,          ID_PREV_PANE,           VIRTKEY, SHIFT, NOINVERT
+    VK_F7,          ID_HOTSPOTS_WALK,       VIRTKEY, CONTROL, NOINVERT
+    VK_F7,          ID_HOTSPOTS_SELECTID,   VIRTKEY, NOINVERT
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_ABOUTBOX DIALOGEX 0, 0, 282, 93
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | 
+    WS_SYSMENU
+CAPTION "About snotrack"
+FONT 8, "MS Shell Dlg", 0, 0, 0x1
+BEGIN
+    ICON            IDR_MAINFRAME,IDC_STATIC,11,11,20,20
+    LTEXT           "(copyright)",IDC_COPYRIGHT,40,23,183,8
+    LTEXT           "http://www.snopilot.com/",IDC_WEBSITE_URL,40,40,183,8
+    DEFPUSHBUTTON   "OK",IDOK,225,7,50,14,WS_GROUP
+    CONTROL         "",IDC_STATIC,"Static",SS_ETCHEDHORZ,40,57,235,1
+    LTEXT           "snotrack uses zlib, Copyright (c) 1995-2003 Jean-loup Gailly and Mark Adler; and PROJ.4, Copyright (c) 2000 Frank Warmerdam.",
+                    IDC_STATIC,40,63,235,23
+    EDITTEXT        IDC_VERSION,40,7,182,12,ES_AUTOHSCROLL | ES_READONLY | 
+                    NOT WS_BORDER
+END
+
+IDD_IMPORT_SERIAL_COMPLETE_PAGE DIALOGEX 0, 0, 317, 193
+STYLE DS_SETFONT | WS_CHILD | WS_DISABLED | WS_CAPTION
+FONT 8, "MS Sans Serif", 0, 0, 0x0
+BEGIN
+    LTEXT           "Finished Importing from Serial Port",IDC_TITLE,115,8,
+                    195,24
+    ICON            "",IDC_COMPLETION_ICON,115,40,20,20
+    LTEXT           "[Completion Text]",IDC_COMPLETION_MESSAGE,141,40,169,59
+    LTEXT           "Press 'Finish' to close this wizard.",IDC_STATIC,115,
+                    169,195,8
+END
+
+IDD_IMPORT_SERIAL_DEVICE_PAGE DIALOGEX 0, 0, 317, 146
+STYLE DS_SETFONT | WS_CHILD | WS_DISABLED | WS_CAPTION
+FONT 8, "MS Sans Serif", 0, 0, 0x0
+BEGIN
+    LTEXT           "Please ensure that your Garmin GPS device is correctly attached to your PC using the serial cable provided.  When you have done this, please select the relevant serial port from the choices shown below.",
+                    IDC_STATIC,21,1,275,28
+    LTEXT           "Serial Port:",IDC_STATIC,21,35,35,8
+    COMBOBOX        IDC_SERIAL_DEVICES,64,33,76,65,CBS_DROPDOWNLIST | 
+                    WS_VSCROLL | WS_TABSTOP
+END
+
+IDD_IMPORT_SERIAL_PROGRESS_PAGE DIALOGEX 0, 0, 317, 146
+STYLE DS_SETFONT | WS_CHILD | WS_DISABLED | WS_CAPTION
+FONT 8, "MS Sans Serif", 0, 0, 0x0
+BEGIN
+    CONTROL         "",IDC_PROGRESS,"msctls_progress32",WS_BORDER,31,34,188,
+                    14
+    LTEXT           "",IDC_TRACKLOG_PROGRESS,33,55,186,8
+END
+
+IDD_IMPORT_SERIAL_WELCOME_PAGE DIALOGEX 0, 0, 317, 193
+STYLE DS_SETFONT | WS_CHILD | WS_DISABLED | WS_CAPTION
+FONT 8, "MS Sans Serif", 0, 0, 0x0
+BEGIN
+    LTEXT           "Import from Serial Port",IDC_TITLE,115,8,195,24
+    LTEXT           "This wizard will help you import track logs and waypoints from your Garmin GPS device.",
+                    IDC_STATIC,115,40,195,18
+    LTEXT           "Before you begin, please configure your Garmin GPS to communicate using the ""Garmin"" protocol.  See your Garmin user guide if you are unsure how to do this.",
+                    IDC_STATIC,115,64,195,26
+    LTEXT           "Press the Next button to continue.",IDC_STATIC,115,169,
+                    195,8
+END
+
+IDD_FILE_PROPERTIES_TRACKLOG DIALOGEX 0, 0, 235, 201
+STYLE DS_SETFONT | DS_FIXEDSYS | WS_CHILD | WS_DISABLED | WS_CAPTION
+CAPTION "Track Log"
+FONT 8, "MS Shell Dlg", 0, 0, 0x0
+BEGIN
+    LTEXT           "Number of points in Track Log:",IDC_STATIC,7,10,98,8
+    EDITTEXT        IDC_TRACKLOG_COUNT,111,10,65,14,ES_AUTOHSCROLL | 
+                    ES_READONLY | NOT WS_BORDER
+    LTEXT           "Number of Waypoints:",IDC_STATIC,7,29,73,8
+    EDITTEXT        IDC_WAYPOINT_COUNT,111,29,65,14,ES_AUTOHSCROLL | 
+                    ES_READONLY | NOT WS_BORDER
+    CONTROL         "",IDC_STATIC,"Static",SS_ETCHEDHORZ,7,42,220,1
+    EDITTEXT        IDC_MAX_LATITUDE,83,48,69,14,ES_AUTOHSCROLL | 
+                    ES_READONLY | NOT WS_BORDER
+    EDITTEXT        IDC_MIN_LONGITUDE,7,64,69,14,ES_AUTOHSCROLL | 
+                    ES_READONLY | NOT WS_BORDER
+    EDITTEXT        IDC_MAX_LONGITUDE,159,64,69,14,ES_AUTOHSCROLL | 
+                    ES_READONLY | NOT WS_BORDER
+    EDITTEXT        IDC_MIN_LATITUDE,83,81,69,14,ES_AUTOHSCROLL | 
+                    ES_READONLY | NOT WS_BORDER
+    CONTROL         "",IDC_STATIC,"Static",SS_ETCHEDHORZ,7,97,221,1
+    LTEXT           "Minimum Elevation (m):",IDC_STATIC,7,106,74,8
+    EDITTEXT        IDC_MIN_ELEVATION,98,106,130,14,ES_AUTOHSCROLL | 
+                    ES_READONLY | NOT WS_BORDER
+    LTEXT           "Maximum Elevation (m):",IDC_STATIC,7,124,77,8
+    EDITTEXT        IDC_MAX_ELEVATION,98,124,130,14,ES_AUTOHSCROLL | 
+                    ES_READONLY | NOT WS_BORDER
+    CONTROL         "",IDC_STATIC,"Static",SS_ETCHEDHORZ,7,145,220,1
+    LTEXT           "Earliest tracklog fix taken:",IDC_STATIC,7,154,84,8
+    EDITTEXT        IDC_MIN_TIMESTAMP,98,154,130,14,ES_AUTOHSCROLL | 
+                    ES_READONLY | NOT WS_BORDER
+    LTEXT           "Latest tracklog fix taken:",IDC_STATIC,7,174,81,8
+    EDITTEXT        IDC_MAX_TIMESTAMP,98,174,130,14,ES_AUTOHSCROLL | 
+                    ES_READONLY | NOT WS_BORDER
+END
+
+IDD_IMPORT_FILE_PROGRESS DIALOGEX 0, 0, 186, 63
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_VISIBLE | 
+    WS_CAPTION | WS_SYSMENU
+CAPTION "Importing..."
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    CONTROL         "",IDC_PROGRESS,"msctls_progress32",WS_BORDER,19,24,147,
+                    14
+END
+
+IDD_STARTPAGEVIEW DIALOGEX 0, 0, 320, 200
+STYLE DS_SETFONT | WS_CHILD
+FONT 8, "MS Sans Serif", 0, 0, 0x0
+BEGIN
+    LTEXT           "Open an Existing File",IDC_TITLE,7,7,157,13,0,
+                    WS_EX_TRANSPARENT
+    CONTROL         "",IDC_LISTCTRL,"SysListView32",LVS_REPORT | 
+                    LVS_SINGLESEL | LVS_SHOWSELALWAYS | LVS_ALIGNLEFT | 
+                    LVS_OWNERDATA | WS_BORDER | WS_TABSTOP,7,25,306,147
+    PUSHBUTTON      "New File",IDC_NEW_FILE,7,178,54,15
+    PUSHBUTTON      "Open File",IDC_OPEN_FILE,72,178,54,15
+END
+
+IDD_NEW_FILE_WELCOME_PAGE DIALOGEX 0, 0, 317, 193
+STYLE DS_SETFONT | WS_CHILD | WS_DISABLED | WS_CAPTION
+FONT 8, "MS Sans Serif", 0, 0, 0x0
+BEGIN
+    LTEXT           "New File",IDC_TITLE,115,8,195,24
+    LTEXT           "This wizard will walk you through creating a new file.",
+                    IDC_STATIC,115,40,195,50
+    LTEXT           "Press the Next button to continue.",IDC_STATIC,115,169,
+                    195,8
+END
+
+IDD_NEW_FILE_COMPLETE_PAGE DIALOGEX 0, 0, 317, 193
+STYLE DS_SETFONT | WS_CHILD | WS_DISABLED | WS_CAPTION
+FONT 8, "MS Sans Serif", 0, 0, 0x0
+BEGIN
+    LTEXT           "Creating New File",IDC_TITLE,115,8,195,24
+    LTEXT           "Resort:",IDC_STATIC,115,40,24,8
+    EDITTEXT        IDC_RESORT,158,40,152,12,ES_AUTOHSCROLL | ES_READONLY | 
+                    NOT WS_BORDER
+    LTEXT           "Comments:",IDC_STATIC,115,59,36,8
+    EDITTEXT        IDC_COMMENTS,158,59,152,40,ES_MULTILINE | ES_AUTOVSCROLL | 
+                    ES_READONLY | NOT WS_BORDER | WS_VSCROLL
+    LTEXT           "Press 'Finish' to close this wizard.",IDC_STATIC,115,
+                    169,195,8
+END
+
+IDD_NEW_FILE_RESORT_PAGE DIALOGEX 0, 0, 317, 146
+STYLE DS_SETFONT | WS_CHILD | WS_DISABLED | WS_CAPTION
+FONT 8, "MS Sans Serif", 0, 0, 0x0
+BEGIN
+    CONTROL         "Predefined Resort",IDC_PREDEFINED_RESORT,"Button",
+                    BS_AUTORADIOBUTTON,21,2,73,10
+    CONTROL         "Custom Resort",IDC_CUSTOM_RESORT,"Button",
+                    BS_AUTORADIOBUTTON,21,36,62,10
+    LTEXT           "Resort File:",IDC_STATIC,37,17,44,8
+    EDITTEXT        IDC_RESORT_FILE,87,14,151,14,ES_AUTOHSCROLL | 
+                    ES_READONLY
+    PUSHBUTTON      "Browse...",IDC_BROWSE_RESORT_FILE,246,14,50,14
+    LTEXT           "Resort Name:",IDC_STATIC,37,52,44,8
+    EDITTEXT        IDC_RESORT_NAME,87,50,151,14,ES_AUTOHSCROLL
+    LTEXT           "Comments:",IDC_STATIC,21,91,36,8
+    EDITTEXT        IDC_COMMENTS,64,88,232,14,ES_AUTOHSCROLL
+END
+
+IDD_FILE_PROPERTIES_RESORT DIALOGEX 0, 0, 235, 201
+STYLE DS_SETFONT | DS_FIXEDSYS | WS_CHILD | WS_DISABLED | WS_CAPTION
+CAPTION "Resort"
+FONT 8, "MS Shell Dlg", 0, 0, 0x0
+BEGIN
+    LTEXT           "Resort Filename:",IDC_STATIC,7,7,55,8
+    EDITTEXT        IDC_RESORT_FILE,75,7,153,14,ES_AUTOHSCROLL | ES_READONLY | 
+                    NOT WS_BORDER
+    LTEXT           "Resort Name:",IDC_STATIC,7,26,45,8
+    EDITTEXT        IDC_RESORT_NAME,75,26,153,14,ES_AUTOHSCROLL | 
+                    ES_READONLY | NOT WS_BORDER
+    LTEXT           "Resort Timezone:",IDC_STATIC,7,45,57,8
+    EDITTEXT        IDC_RESORT_TIMEZONE,75,45,153,14,ES_AUTOHSCROLL | 
+                    ES_READONLY | NOT WS_BORDER
+END
+
+IDD_FILE_PROPERTIES_DEVICE DIALOGEX 0, 0, 235, 201
+STYLE DS_SETFONT | DS_FIXEDSYS | WS_CHILD | WS_DISABLED | WS_CAPTION
+CAPTION "Device"
+FONT 8, "MS Shell Dlg", 0, 0, 0x0
+BEGIN
+    LTEXT           "Product ID:",IDC_STATIC,7,7,38,8
+    EDITTEXT        IDC_PRODUCT_ID,77,7,151,14,ES_AUTOHSCROLL | ES_READONLY | 
+                    NOT WS_BORDER
+    LTEXT           "Software Version:",IDC_STATIC,7,27,58,8
+    EDITTEXT        IDC_SOFTWARE_VERSION,77,27,151,14,ES_AUTOHSCROLL | 
+                    ES_READONLY | NOT WS_BORDER
+    LTEXT           "Product Description:",IDC_STATIC,7,47,66,8
+    EDITTEXT        IDC_PRODUCT_DESCRIPTION,77,47,151,14,ES_AUTOHSCROLL | 
+                    ES_READONLY | NOT WS_BORDER
+    LTEXT           "Additional Information:",IDC_STATIC,7,68,74,8
+    LISTBOX         IDC_ADDITIONAL_INFORMATION,7,83,221,111,
+                    LBS_NOINTEGRALHEIGHT | WS_VSCROLL | WS_TABSTOP
+END
+
+IDD_VIEW_OPTIONS DIALOGEX 0, 0, 199, 97
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | 
+    WS_SYSMENU
+CAPTION "View Options"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,142,7,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,142,24,50,14
+    CONTROL         "",IDC_LISTCTRL,"SysListView32",LVS_REPORT | 
+                    LVS_SHOWSELALWAYS | LVS_ALIGNLEFT | LVS_NOCOLUMNHEADER | 
+                    LVS_NOSORTHEADER | WS_BORDER | WS_TABSTOP,7,7,126,83
+END
+
+#if defined(APSTUDIO_INVOKED) || defined(ENABLE_DESIGN_MODE)
+#if defined(APSTUDIO_INVOKED)
+IDD_SELECT_HOTSPOT_ID$(ENABLE_DESIGN_MODE) DIALOGEX 0, 0, 186, 95
+#else
+IDD_SELECT_HOTSPOT_ID DIALOGEX 0, 0, 186, 95
+#endif
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | 
+    WS_SYSMENU
+CAPTION "Select Hotspot ID"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    LTEXT           "Current ID:",IDC_STATIC,7,10,38,8
+    EDITTEXT        IDC_CURRENT_ID,51,7,67,14,ES_AUTOHSCROLL | ES_READONLY
+    LTEXT           "New ID:",IDC_STATIC,7,35,27,8
+    EDITTEXT        IDC_NEW_ID,51,32,67,14,ES_AUTOHSCROLL
+    CONTROL         "",IDC_SPIN_ID,"msctls_updown32",UDS_SETBUDDYINT | 
+                    UDS_ALIGNRIGHT | UDS_AUTOBUDDY | UDS_ARROWKEYS | 
+                    UDS_NOTHOUSANDS,120,39,10,14
+    DEFPUSHBUTTON   "OK",IDOK,129,7,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,129,24,50,14
+END
+#endif
+
+#if defined(APSTUDIO_INVOKED) || defined(ENABLE_DESIGN_MODE)
+#if defined(APSTUDIO_INVOKED)
+IDD_EDIT_PATHS$(ENABLE_DESIGN_MODE) DIALOGEX 0, 0, 294, 221
+#else
+IDD_EDIT_PATHS DIALOGEX 0, 0, 294, 221
+#endif
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | 
+    WS_SYSMENU
+CAPTION "Edit Paths"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    CONTROL         "",IDC_LISTCTRL,"SysListView32",LVS_REPORT | 
+                    LVS_SHOWSELALWAYS | LVS_ALIGNLEFT | LVS_NOSORTHEADER | 
+                    WS_BORDER | WS_TABSTOP,7,7,220,207
+    DEFPUSHBUTTON   "OK",IDOK,237,7,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,237,24,50,14
+    PUSHBUTTON      "&New Path...",IDC_NEW_PATH,237,56,50,14
+    PUSHBUTTON      "&Edit Path...",IDC_EDIT_PATH,237,73,50,14
+    PUSHBUTTON      "&Delete",IDC_DELETE_PATH,237,90,50,14
+END
+#endif
+
+#if defined(APSTUDIO_INVOKED) || defined(ENABLE_DESIGN_MODE)
+#if defined(APSTUDIO_INVOKED)
+IDD_EDIT_PATH$(ENABLE_DESIGN_MODE) DIALOGEX 0, 0, 227, 106
+#else
+IDD_EDIT_PATH DIALOGEX 0, 0, 227, 106
+#endif
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | 
+    WS_SYSMENU
+CAPTION "Edit Path"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    LTEXT           "Name:",IDC_STATIC,7,10,22,8
+    EDITTEXT        IDC_PATH_NAME,48,7,103,14,ES_AUTOHSCROLL
+    LTEXT           "Hotspots:",IDC_STATIC,7,30,32,8
+    EDITTEXT        IDC_PATH_HOTSPOTS,48,27,103,14,ES_AUTOHSCROLL
+    DEFPUSHBUTTON   "OK",IDOK,170,7,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,170,24,50,14
+    LTEXT           "Icon:",IDC_STATIC,7,62,18,8
+    CONTROL         "",IDC_LISTCTRL,"SysListView32",LVS_SMALLICON | 
+                    LVS_SINGLESEL | LVS_SHOWSELALWAYS | LVS_ALIGNLEFT | 
+                    WS_BORDER | WS_TABSTOP,48,62,172,37
+    CONTROL         "This is a lift",IDC_PATH_IS_LIFT,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,48,46,142,10
+END
+#endif
+
+#if defined(APSTUDIO_INVOKED) || defined(ENABLE_DESIGN_MODE)
+#if defined(APSTUDIO_INVOKED)
+IDD_WALK_HOTSPOTS$(ENABLE_DESIGN_MODE) DIALOGEX 0, 0, 374, 181
+#else
+IDD_WALK_HOTSPOTS DIALOGEX 0, 0, 374, 181
+#endif
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | 
+    WS_SYSMENU
+CAPTION "Walk Hotspots"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    PUSHBUTTON      "Close",IDCANCEL,317,7,50,14
+    CONTROL         "",IDC_LISTCTRL,"SysListView32",LVS_REPORT | 
+                    LVS_SHOWSELALWAYS | LVS_ALIGNLEFT | LVS_NOSORTHEADER | 
+                    WS_BORDER | WS_TABSTOP,7,7,304,167
+END
+#endif
+
+#if defined(APSTUDIO_INVOKED) || defined(ENABLE_DESIGN_MODE)
+#if defined(APSTUDIO_INVOKED)
+IDD_DEFINE_HOTSPOT_GRID$(ENABLE_DESIGN_MODE) DIALOGEX 0, 0, 258, 125
+#else
+IDD_DEFINE_HOTSPOT_GRID DIALOGEX 0, 0, 258, 125
+#endif
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | 
+    WS_SYSMENU
+CAPTION "Define Hotspot Grid"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    LTEXT           "Minimum Longitude:",IDC_STATIC,7,10,64,8
+    EDITTEXT        IDC_MIN_LON,77,7,117,14,ES_AUTOHSCROLL
+    LTEXT           "Maximum Longitude:",IDC_STATIC,7,28,66,8
+    EDITTEXT        IDC_MAX_LON,77,25,117,14,ES_AUTOHSCROLL
+    LTEXT           "Minimum Latitude:",IDC_STATIC,7,46,58,8
+    EDITTEXT        IDC_MIN_LAT,77,43,117,14,ES_AUTOHSCROLL
+    LTEXT           "Maximum Latitude:",IDC_STATIC,7,64,61,8
+    EDITTEXT        IDC_MAX_LAT,77,61,117,14,ES_AUTOHSCROLL
+    DEFPUSHBUTTON   "OK",IDOK,201,7,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,201,24,50,14
+    LTEXT           "Note: These values will be converted to logical coordinates (in metres) and rounded automatically.",
+                    IDC_STATIC,7,80,244,18
+    LTEXT           "Grid Spacing:",IDC_STATIC,7,107,43,8
+    EDITTEXT        IDC_GRID_SPACING,77,104,117,14,ES_AUTOHSCROLL
+    CONTROL         "",IDC_STATIC,"Static",SS_ETCHEDHORZ,7,99,244,1
+    LTEXT           "metres",IDC_STATIC,199,107,35,8
+END
+#endif
+
+#if defined(APSTUDIO_INVOKED) || defined(ENABLE_DESIGN_MODE)
+#if defined(APSTUDIO_INVOKED)
+IDD_MATCH_PATHS$(ENABLE_DESIGN_MODE) DIALOGEX 0, 0, 410, 209
+#else
+IDD_MATCH_PATHS DIALOGEX 0, 0, 410, 209
+#endif
+STYLE DS_SETFONT | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU | 
+    WS_THICKFRAME
+CAPTION "Matched Paths"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    PUSHBUTTON      "Close",IDCANCEL,353,7,50,14
+    CONTROL         "",IDC_LISTCTRL,"SysListView32",LVS_REPORT | 
+                    LVS_SINGLESEL | LVS_SHOWSELALWAYS | LVS_ALIGNLEFT | 
+                    WS_BORDER | WS_TABSTOP,7,7,339,195
+END
+#endif
+
+#if defined(APSTUDIO_INVOKED) || defined(ENABLE_DESIGN_MODE)
+#if defined(APSTUDIO_INVOKED)
+IDD_EDIT_LIFTS$(ENABLE_DESIGN_MODE) DIALOGEX 0, 0, 292, 226
+#else
+IDD_EDIT_LIFTS DIALOGEX 0, 0, 292, 226
+#endif
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | 
+    WS_SYSMENU
+CAPTION "Edit Lifts"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,235,7,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,235,24,50,14
+    PUSHBUTTON      "New...",IDC_NEW,235,58,50,14
+    PUSHBUTTON      "Edit...",IDC_EDIT,235,76,50,14
+    PUSHBUTTON      "Delete",IDC_DELETE,235,95,50,14
+    CONTROL         "",IDC_LISTCTRL,"SysListView32",LVS_REPORT | 
+                    LVS_SHOWSELALWAYS | LVS_ALIGNLEFT | LVS_NOSORTHEADER | 
+                    WS_BORDER | WS_TABSTOP,7,7,219,212
+END
+#endif
+
+#if defined(APSTUDIO_INVOKED) || defined(ENABLE_DESIGN_MODE)
+#if defined(APSTUDIO_INVOKED)
+IDD_EDIT_LIFT$(ENABLE_DESIGN_MODE) DIALOGEX 0, 0, 298, 98
+#else
+IDD_EDIT_LIFT DIALOGEX 0, 0, 298, 98
+#endif
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | 
+    WS_SYSMENU
+CAPTION "Edit Lift"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    LTEXT           "Lift Name:",IDC_STATIC,7,10,34,8
+    EDITTEXT        IDC_LIFT_NAME,48,7,146,14,ES_AUTOHSCROLL
+    GROUPBOX        "Top of Lift",IDC_STATIC,7,29,226,30
+    LTEXT           "Longitude:",IDC_STATIC,14,41,35,8
+    EDITTEXT        IDC_TOP_LON,52,38,61,14,ES_AUTOHSCROLL
+    LTEXT           "Latitude:",IDC_STATIC,126,41,30,8
+    EDITTEXT        IDC_TOP_LAT,159,38,61,14,ES_AUTOHSCROLL
+    GROUPBOX        "Bottom of Lift",IDC_STATIC,7,61,226,30
+    LTEXT           "Longitude:",IDC_STATIC,14,73,35,8
+    EDITTEXT        IDC_BOT_LON,52,70,61,14,ES_AUTOHSCROLL
+    LTEXT           "Latitude:",IDC_STATIC,126,73,30,8
+    EDITTEXT        IDC_BOT_LAT,159,70,61,14,ES_AUTOHSCROLL
+    DEFPUSHBUTTON   "OK",IDOK,241,7,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,241,24,50,14
+END
+#endif
+
+#if defined(APSTUDIO_INVOKED) || defined(ENABLE_DESIGN_MODE)
+#if defined(APSTUDIO_INVOKED)
+IDD_EDIT_WAYPOINTS$(ENABLE_DESIGN_MODE) DIALOGEX 0, 0, 292, 226
+#else
+IDD_EDIT_WAYPOINTS DIALOGEX 0, 0, 292, 226
+#endif
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | 
+    WS_SYSMENU
+CAPTION "Edit Waypoints"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,235,7,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,235,24,50,14
+    PUSHBUTTON      "New...",IDC_NEW,235,58,50,14
+    PUSHBUTTON      "Edit...",IDC_EDIT,235,76,50,14
+    PUSHBUTTON      "Delete",IDC_DELETE,235,95,50,14
+    CONTROL         "",IDC_LISTCTRL,"SysListView32",LVS_REPORT | 
+                    LVS_SHOWSELALWAYS | LVS_ALIGNLEFT | LVS_NOSORTHEADER | 
+                    WS_BORDER | WS_TABSTOP,7,7,219,212
+END
+#endif
+
+#if defined(APSTUDIO_INVOKED) || defined(ENABLE_DESIGN_MODE)
+#if defined(APSTUDIO_INVOKED)
+IDD_EDIT_WAYPOINT$(ENABLE_DESIGN_MODE) DIALOGEX 0, 0, 298, 61
+#else
+IDD_EDIT_WAYPOINT DIALOGEX 0, 0, 298, 61
+#endif
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | 
+    WS_SYSMENU
+CAPTION "Edit Waypoint"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    LTEXT           "Waypoint Name:",-1,7,10,54,8
+    EDITTEXT        IDC_WAYPOINT_NAME,66,7,146,14,ES_AUTOHSCROLL
+    LTEXT           "Longitude:",-1,7,30,35,8
+    EDITTEXT        IDC_WAYPOINT_LON,45,27,61,14,ES_AUTOHSCROLL
+    LTEXT           "Latitude:",-1,119,30,30,8
+    EDITTEXT        IDC_WAYPOINT_LAT,152,27,61,14,ES_AUTOHSCROLL
+    DEFPUSHBUTTON   "OK",IDOK,241,7,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,241,24,50,14
+END
+#endif
+
+IDD_SIDEBARVIEW DIALOGEX 0, 0, 149, 200
+STYLE DS_SETFONT | WS_CHILD
+FONT 8, "MS Sans Serif", 0, 0, 0x0
+BEGIN
+    LISTBOX         IDC_LISTBOX,7,7,135,186,LBS_SORT | LBS_OWNERDRAWFIXED | 
+                    LBS_NOINTEGRALHEIGHT | LBS_EXTENDEDSEL | WS_VSCROLL | 
+                    WS_TABSTOP
+END
+
+#if defined(APSTUDIO_INVOKED) || defined(ENABLE_DESIGN_MODE)
+#if defined(APSTUDIO_INVOKED)
+IDD_SELECT_HOTSPOT_SIZE$(ENABLE_DESIGN_MODE) DIALOGEX 0, 0, 186, 57
+#else
+IDD_SELECT_HOTSPOT_SIZE DIALOGEX 0, 0, 186, 57
+#endif
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | 
+    WS_SYSMENU
+CAPTION "Hotspot Size"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    LTEXT           "Size:",-1,7,10,16,8
+    EDITTEXT        IDC_HOTSPOT_SIZE,31,7,76,14,ES_AUTOHSCROLL
+    CONTROL         "",IDC_HOTSPOT_SIZE_SPIN,"msctls_updown32",
+                    UDS_SETBUDDYINT | UDS_ALIGNRIGHT | UDS_AUTOBUDDY | 
+                    UDS_ARROWKEYS | UDS_NOTHOUSANDS,109,7,10,14
+    DEFPUSHBUTTON   "OK",IDOK,129,7,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,129,24,50,14
+END
+#endif
+
+#if defined(APSTUDIO_INVOKED) || defined(ENABLE_DESIGN_MODE)
+#if defined(APSTUDIO_INVOKED)
+IDD_EDIT_HOTSPOT_NAMES$(ENABLE_DESIGN_MODE) DIALOGEX 0, 0, 294, 221
+#else
+IDD_EDIT_HOTSPOT_NAMES DIALOGEX 0, 0, 294, 221
+#endif
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | 
+    WS_SYSMENU
+CAPTION "Edit Paths"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    CONTROL         "",IDC_LISTCTRL,"SysListView32",LVS_REPORT | 
+                    LVS_SHOWSELALWAYS | LVS_ALIGNLEFT | LVS_NOSORTHEADER | 
+                    WS_BORDER | WS_TABSTOP,7,7,220,207
+    DEFPUSHBUTTON   "OK",IDOK,237,7,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,237,24,50,14
+    PUSHBUTTON      "&Edit Name...",IDC_EDIT_NAME,237,73,50,14
+END
+#endif
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO 
+BEGIN
+    IDD_ABOUTBOX, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 275
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 86
+    END
+
+    IDD_IMPORT_SERIAL_COMPLETE_PAGE, DIALOG
+    BEGIN
+        RIGHTMARGIN, 310
+        VERTGUIDE, 115
+        BOTTOMMARGIN, 186
+        HORZGUIDE, 8
+        HORZGUIDE, 32
+        HORZGUIDE, 40
+        HORZGUIDE, 99
+        HORZGUIDE, 177
+    END
+
+    IDD_IMPORT_SERIAL_DEVICE_PAGE, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 310
+        VERTGUIDE, 21
+        VERTGUIDE, 296
+        TOPMARGIN, 1
+    END
+
+    IDD_IMPORT_SERIAL_WELCOME_PAGE, DIALOG
+    BEGIN
+        RIGHTMARGIN, 310
+        VERTGUIDE, 115
+        BOTTOMMARGIN, 186
+        HORZGUIDE, 8
+        HORZGUIDE, 32
+        HORZGUIDE, 40
+        HORZGUIDE, 90
+        HORZGUIDE, 177
+    END
+
+    IDD_FILE_PROPERTIES_TRACKLOG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 228
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 194
+    END
+
+    IDD_IMPORT_FILE_PROGRESS, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 179
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 56
+    END
+
+    IDD_STARTPAGEVIEW, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 313
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 193
+    END
+
+    IDD_NEW_FILE_WELCOME_PAGE, DIALOG
+    BEGIN
+        RIGHTMARGIN, 310
+        VERTGUIDE, 115
+        BOTTOMMARGIN, 186
+        HORZGUIDE, 8
+        HORZGUIDE, 32
+        HORZGUIDE, 40
+        HORZGUIDE, 90
+        HORZGUIDE, 177
+    END
+
+    IDD_NEW_FILE_COMPLETE_PAGE, DIALOG
+    BEGIN
+        RIGHTMARGIN, 310
+        VERTGUIDE, 115
+        BOTTOMMARGIN, 186
+        HORZGUIDE, 8
+        HORZGUIDE, 32
+        HORZGUIDE, 40
+        HORZGUIDE, 99
+        HORZGUIDE, 177
+    END
+
+    IDD_NEW_FILE_RESORT_PAGE, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 310
+        VERTGUIDE, 21
+        VERTGUIDE, 296
+        TOPMARGIN, 1
+    END
+
+    IDD_FILE_PROPERTIES_RESORT, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 228
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 194
+    END
+
+    IDD_FILE_PROPERTIES_DEVICE, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 228
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 194
+    END
+
+    IDD_VIEW_OPTIONS, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 192
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 90
+    END
+
+    "IDD_SELECT_HOTSPOT_ID$(ENABLE_DESIGN_MODE)", DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 179
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 88
+    END
+
+    IDD_SIDEBARVIEW, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 142
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 193
+    END
+
+    "IDD_SELECT_HOTSPOT_SIZE$(ENABLE_DESIGN_MODE)", DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 179
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 50
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Cursor
+//
+
+IDC_ZOOM_OUT            CURSOR                  "res\\zoom_out.cur"
+IDC_CENTER              CURSOR                  "res\\center.cur"
+IDC_ZOOM_IN             CURSOR                  "res\\zoom_in.cur"
+IDC_DEFINE_HOTSPOT      CURSOR                  "res\\define_hotspot.cur"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE 
+BEGIN
+    IDR_MAINFRAME           "SnoTrack"
+    IDR_SNOTRACKTYPE        "\nSnoTrack\nSnoTrack\nSnoTrack Files (*.snotrack)\n.snotrack\nSnoTrack.Document\nSnoTrack.Document"
+    IDS_IMPORT_SERIAL_CANCELLED_TITLE "Cancelled Importing from Serial Port"
+    IDS_IMPORT_SERIAL_PROGRESS_PAGE_TITLE "Importing Track Logs / Waypoints"
+    IDS_IMPORT_SERIAL_SUCCEEDED_TITLE "Finished Importing from Serial Port"
+    IDS_IMPORT_SERIAL_FAILED_TITLE "Importing from Serial Port Failed"
+    IDS_PROPERTIES_CAPTION  "Properties"
+    IDS_IMPORT_SERIAL_DEVICE_PAGE_TITLE "Select Serial Port"
+    IDS_NEW_FILE_WIZARD_CAPTION "New File"
+    IDS_NEW_FILE_RESORT_CAPTION "New File"
+    IDS_IMPORT_SERIAL_WIZARD_CAPTION "Import from Serial Port"
+    IDS_IMPORT_SERIAL_CANCELLED 
+                            "Importing was cancelled.  Press the Back button to start again, or the Finish button to close this wizard."
+    IDS_IMPORT_SERIAL_FAILED 
+                            "Importing failed (0x%1!x!). Press the Back button to start again, or the Finish button to close this wizard."
+    IDS_IMPORT_SERIAL_SUCCEEDED 
+                            "Importing completed successfully.  Imported %1!d! tracklog points and %2!d! waypoints. Press the Finish button to continue."
+    IDR_STARTPAGEVIEW       "StartPageView\nStart Page\n\n\n\n\n"
+    IDS_NEW_FILE_RESORT_TITLE "Resort Details / Comments"
+END
+
+STRINGTABLE 
+BEGIN
+    AFX_IDS_APP_TITLE       "SnoTrack"
+    AFX_IDS_IDLEMESSAGE     "Ready"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_FILE_NEW             "Create a new document\nNew"
+    ID_FILE_OPEN            "Open an existing document\nOpen"
+    ID_FILE_CLOSE           "Close the active document\nClose"
+    ID_FILE_SAVE            "Save the active document\nSave"
+    ID_FILE_SAVE_AS         "Save the active document with a new name\nSave As"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_APP_ABOUT            "Display program information, version number and copyright\nAbout"
+    ID_APP_EXIT             "Quit the application; prompts to save documents\nExit"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_FILE_MRU_FILE1       "Open this document"
+    ID_FILE_MRU_FILE2       "Open this document"
+    ID_FILE_MRU_FILE3       "Open this document"
+    ID_FILE_MRU_FILE4       "Open this document"
+    ID_FILE_MRU_FILE5       "Open this document"
+    ID_FILE_MRU_FILE6       "Open this document"
+    ID_FILE_MRU_FILE7       "Open this document"
+    ID_FILE_MRU_FILE8       "Open this document"
+    ID_FILE_MRU_FILE9       "Open this document"
+    ID_FILE_MRU_FILE10      "Open this document"
+    ID_FILE_MRU_FILE11      "Open this document"
+    ID_FILE_MRU_FILE12      "Open this document"
+    ID_FILE_MRU_FILE13      "Open this document"
+    ID_FILE_MRU_FILE14      "Open this document"
+    ID_FILE_MRU_FILE15      "Open this document"
+    ID_FILE_MRU_FILE16      "Open this document"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_NEXT_PANE            "Switch to the next window pane\nNext Pane"
+    ID_PREV_PANE            "Switch back to the previous window pane\nPrevious Pane"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_WINDOW_NEW           "Open another window for the active document\nNew Window"
+    ID_WINDOW_ARRANGE       "Arrange icons at the bottom of the window\nArrange Icons"
+    ID_WINDOW_CASCADE       "Arrange windows so they overlap\nCascade Windows"
+    ID_WINDOW_TILE_HORZ     "Arrange windows as non-overlapping tiles\nTile Windows"
+    ID_WINDOW_TILE_VERT     "Arrange windows as non-overlapping tiles\nTile Windows"
+    ID_WINDOW_SPLIT         "Split the active window into panes\nSplit"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_EDIT_CLEAR           "Erase the selection\nErase"
+    ID_EDIT_CLEAR_ALL       "Erase everything\nErase All"
+    ID_EDIT_COPY            "Copy the selection and put it on the Clipboard\nCopy"
+    ID_EDIT_CUT             "Cut the selection and put it on the Clipboard\nCut"
+    ID_EDIT_FIND            "Find the specified text\nFind"
+    ID_EDIT_PASTE           "Insert Clipboard contents\nPaste"
+    ID_EDIT_REPEAT          "Repeat the last action\nRepeat"
+    ID_EDIT_REPLACE         "Replace specific text with different text\nReplace"
+    ID_EDIT_SELECT_ALL      "Select the entire document\nSelect All"
+    ID_EDIT_UNDO            "Undo the last action\nUndo"
+    ID_EDIT_REDO            "Redo the previously undone action\nRedo"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_VIEW_TOOLBAR         "Show or hide the toolbar\nToggle ToolBar"
+    ID_VIEW_STATUS_BAR      "Show or hide the status bar\nToggle StatusBar"
+END
+
+STRINGTABLE 
+BEGIN
+    AFX_IDS_SCSIZE          "Change the window size"
+    AFX_IDS_SCMOVE          "Change the window position"
+    AFX_IDS_SCMINIMIZE      "Reduce the window to an icon"
+    AFX_IDS_SCMAXIMIZE      "Enlarge the window to full size"
+    AFX_IDS_SCNEXTWINDOW    "Switch to the next document window"
+    AFX_IDS_SCPREVWINDOW    "Switch to the previous document window"
+    AFX_IDS_SCCLOSE         "Close the active window and prompts to save the documents"
+END
+
+STRINGTABLE 
+BEGIN
+    AFX_IDS_SCRESTORE       "Restore the window to normal size"
+    AFX_IDS_SCTASKLIST      "Activate Task List"
+    AFX_IDS_MDICHILD        "Activate this window"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_MODE_CENTER          "On a mouse click, center the view on the mouse pointer\nCenter on pointer"
+    ID_VIEW_ROTATECCW       "Rotate the view by 10 degrees counter-clockwise\nRotate Counter-Clockwise"
+    ID_VIEW_ROTATECW        "Rotate the view by 10 degrees clockwise\nRotate Clockwise"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_IMPORT_SERIAL        "Import tracklog and waypoints from a Garmin GPS unit connected by serial\nImport from Serial"
+    ID_IMPORT_TRACKLOGFROMFILE 
+                            "Import points from a CSV file into the track log\nImport Track Log From File"
+    ID_IMPORT_WAYPOINTSFROMFILE "Import waypoints from a CSV file"
+    ID_VIEW_ZOOMIN          "Zoom In\nZoom In"
+    ID_VIEW_ZOOMOUT         "Zoom Out\nZoom Out"
+    ID_MODE_ZOOMIN          "On a mouse click, zoom in around the mouse pointer\nZoom in on pointer"
+    ID_MODE_ZOOMOUT         "On a mouse click, zoom out around the mouse pointer\nZoom out on pointer"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_FILE_UPLOADFILE      "Upload your tracklog to snopilot.com\nUpload File"
+    ID_EXPORT_TRACKLOGTOFILE "Export tracklog to CSV file"
+    ID_EXPORT_WAYPOINTSTOFILE "Export waypoints to CSV file"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_NEW_FILE_RESORT_SUBTITLE 
+                            "Please choose a Resort File and enter some comments to describe this file"
+    IDS_NEW_FILE_WELCOME_CAPTION "New File"
+    IDS_NEW_FILE_COMPLETE_CAPTION "New File"
+    ID_INDICATOR_LON        "(Longitude goes here)"
+    ID_INDICATOR_LAT        "(Latitude goes here)"
+    ID_INDICATOR_SCALE      "(Scale goes here)"
+    IDS_EMPTY_DATASET       "There are no tracklog or waypoints to show.  Select File / Import to import some."
+    IDS_START_PAGE_TITLE    "Start Page"
+    IDS_FAILED_TO_OPEN_TRACKLOG_CSV "Failed to open file."
+    IDS_MEMORY_ALLOCATION_FAILED "Memory allocation failed."
+    IDS_FAILED_TO_COMPOSE_PATH_TO_UPLOAD_WIZARD 
+                            "Couldn't compose path to file upload wizard."
+    IDS_FAILED_TO_FIND_UPLOAD_WIZARD "Couldn't find upload wizard."
+    IDS_FAILED_OPEN_EXPORT_TRACKLOG_CSV "Failed to open file '%s', errno = %d"
+    IDS_FAILED_OPEN_EXPORT_WAYPOINT_CSV "Failed to open file '%s', errno = %d"
+    IDS_EXPIRED             "Your copy of SnoTrack has expired.\r\nPlease check http://www.snopilot.com for details of how to upgrade."
+    IDS_OTHER_RESORT_FILENAME "(Other)"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_COMMENTS_SIZE       "Comments field has a maximum size of %d"
+    IDS_LOOKING_FOR_GARMIN  "Looking for Garmin device on %s..."
+    IDS_DOWNLOADING_TRACKLOG "Downloading Track Log: Record %d of %d"
+    IDS_DOWNLOADING_WAYPOINTS "Downloading Waypoints: Record %d of %d"
+    IDS_CONFIRM_HIDE_ALL_LAYERS 
+                            "You've hidden all of the layers.  Nothing will be visible.  Are you sure you want to do this?"
+END
+
+#endif    // English (U.S.) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+/////////////////////////////////////////////////////////////////////////////
+// English (U.K.) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENG)
+#ifdef _WIN32
+LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_UK
+#pragma code_page(1252)
+#endif //_WIN32
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_DIALOG1 DIALOGEX 0, 0, 213, 68
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | 
+    WS_SYSMENU
+CAPTION "Edit Hotspot Name"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    LTEXT           "Hotspot ID:",IDC_STATIC,7,10,38,8
+    EDITTEXT        IDC_HOTSPOT_ID,65,7,40,14,ES_AUTOHSCROLL | ES_READONLY
+    LTEXT           "Hotspot Name:",IDC_STATIC,7,31,49,8
+    EDITTEXT        IDC_HOTSPOT_NAME,65,28,83,14,ES_AUTOHSCROLL
+    DEFPUSHBUTTON   "OK",IDOK,156,7,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,156,24,50,14
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO 
+BEGIN
+    IDD_DIALOG1, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 206
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 61
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE 
+BEGIN
+    "#define _AFX_NO_SPLITTER_RESOURCES\r\n"
+    "#define _AFX_NO_OLE_RESOURCES\r\n"
+    "#define _AFX_NO_TRACKER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)\r\n"
+    "LANGUAGE 9, 1\r\n"
+    "#pragma code_page(1252)\r\n"
+    "#include ""res\\SnoTrack.rc2""  // non-Microsoft Visual C++ edited resources\r\n"
+    "#include ""afxres.rc""         // Standard components\r\n"
+    "#endif\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+#endif    // English (U.K.) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#define _AFX_NO_SPLITTER_RESOURCES
+#define _AFX_NO_OLE_RESOURCES
+#define _AFX_NO_TRACKER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+LANGUAGE 9, 1
+#pragma code_page(1252)
+#include "res\SnoTrack.rc2"  // non-Microsoft Visual C++ edited resources
+#include "afxres.rc"         // Standard components
+#endif
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

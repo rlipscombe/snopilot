@@ -1,0 +1,10 @@
+Debug* 
+proj.dll 
+proj.lib 
+*.ncb 
+*.suo 
+proj_i.exp 
+proj_i.lib 
+*.pdb 
+Release* 
+*.ilk 

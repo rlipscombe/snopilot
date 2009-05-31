@@ -1,0 +1,358 @@
+// Microsoft Visual C++ generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// English (U.S.) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+#pragma code_page(1252)
+#endif //_WIN32
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_WELCOME_PAGE DIALOGEX 0, 0, 317, 193
+STYLE DS_SETFONT | WS_CHILD | WS_DISABLED | WS_CAPTION
+FONT 8, "MS Sans Serif", 0, 0, 0x0
+BEGIN
+    LTEXT           "File Upload Wizard",IDC_TITLE,115,8,195,24
+    LTEXT           "This wizard will guide you through uploading your data file to snopilot.com.",
+                    IDC_STATIC,115,40,195,50
+    LTEXT           "Press 'Next' to continue",IDC_STATIC,115,169,195,8
+END
+
+IDD_PROGRESS_PAGE DIALOGEX 0, 0, 317, 146
+STYLE DS_SETFONT | WS_CHILD | WS_DISABLED | WS_CAPTION
+FONT 8, "MS Sans Serif", 0, 0, 0x0
+BEGIN
+    CONTROL         "",IDC_PROGRESSCTRL,"msctls_progress32",WS_BORDER,29,31,
+                    247,14
+    LTEXT           "",IDC_STATUS,31,53,246,8
+END
+
+IDD_COMPLETE_PAGE DIALOGEX 0, 0, 317, 193
+STYLE DS_SETFONT | WS_CHILD | WS_DISABLED | WS_CAPTION
+FONT 8, "MS Sans Serif", 0, 0, 0x0
+BEGIN
+    LTEXT           "(Title)",IDC_TITLE,115,8,195,24
+    ICON            "",IDC_COMPLETION_ICON,115,40,20,20
+    LTEXT           "(Message)",IDC_MESSAGE,141,40,169,50
+    LTEXT           "(Prompt)",IDC_PROMPT,115,158,195,19
+END
+
+IDD_FILENAME_PAGE DIALOGEX 0, 0, 317, 146
+STYLE DS_SETFONT | WS_CHILD | WS_DISABLED | WS_CAPTION
+FONT 8, "MS Sans Serif", 0, 0, 0x0
+BEGIN
+    LTEXT           "Please enter the name of the file you wish to upload.",
+                    IDC_STATIC,21,1,275,16
+    LTEXT           "Filename:",IDC_STATIC,21,25,31,8
+    EDITTEXT        IDC_FILENAME,61,22,235,14,ES_AUTOHSCROLL
+    PUSHBUTTON      "Browse...",IDC_BROWSE,246,41,50,14
+END
+
+IDD_AGREEMENT_PAGE DIALOGEX 0, 0, 317, 146
+STYLE DS_SETFONT | WS_CHILD | WS_DISABLED | WS_CAPTION
+FONT 8, "MS Sans Serif", 0, 0, 0x0
+BEGIN
+    CONTROL         "I Do Not Agree",IDC_DO_NOT_AGREE,"Button",
+                    BS_AUTORADIOBUTTON,78,133,63,10
+    CONTROL         "I Agree",IDC_AGREE,"Button",BS_AUTORADIOBUTTON,180,133,
+                    39,10
+    CONTROL         "",IDC_AGREEMENT,"RichEdit20A",ES_MULTILINE |
+                    ES_AUTOVSCROLL | ES_READONLY | WS_BORDER | WS_VSCROLL |
+                    WS_TABSTOP,7,1,303,127
+END
+
+IDD_CONTACT_PAGE DIALOGEX 0, 0, 317, 146
+STYLE DS_SETFONT | WS_CHILD | WS_DISABLED | WS_CAPTION
+FONT 8, "MS Sans Serif", 0, 0, 0x0
+BEGIN
+    LTEXT           "Email Address:",IDC_EMAIL_ADDRESS_LABEL,21,14,53,8
+    EDITTEXT        IDC_EMAIL_ADDRESS,83,11,213,14,ES_AUTOHSCROLL
+    LTEXT           "Please check that you have entered the correct email address.",
+                    IDC_EMAIL_ADDRESS_DESCRIPTION,83,29,213,15
+    LTEXT           "Forum Username:",IDC_FORUM_USERNAME_LABEL,21,59,56,8
+    EDITTEXT        IDC_FORUM_USERNAME,83,56,213,14,ES_AUTOHSCROLL
+    LTEXT           "Alternatively, if you are a member of the snopilot forums, enter your username here.",
+                    IDC_FORUM_USERNAME_DESCRIPTION,83,75,213,18
+    LTEXT           "http://forums.snopilot.com",IDC_FORUMS_URL,83,96,84,8
+    CONTROL         "Upload this file anonymously.  Snopilot will not contact you regarding this file.",
+                    IDC_ANONYMOUS,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,21,
+                    127,255,10
+END
+
+IDD_SUMMARY_PAGE DIALOGEX 0, 0, 317, 146
+STYLE DS_SETFONT | WS_CHILD | WS_DISABLED | WS_CAPTION
+FONT 8, "MS Sans Serif", 0, 0, 0x0
+BEGIN
+    CONTROL         "",IDC_SUMMARY,"RichEdit20A",ES_MULTILINE |
+                    ES_AUTOVSCROLL | ES_READONLY | WS_BORDER | WS_VSCROLL |
+                    WS_TABSTOP,7,1,303,134
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO
+BEGIN
+    IDD_WELCOME_PAGE, DIALOG
+    BEGIN
+        RIGHTMARGIN, 310
+        VERTGUIDE, 115
+        BOTTOMMARGIN, 186
+        HORZGUIDE, 8
+        HORZGUIDE, 32
+        HORZGUIDE, 40
+        HORZGUIDE, 90
+        HORZGUIDE, 177
+    END
+
+    IDD_PROGRESS_PAGE, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 310
+        VERTGUIDE, 21
+        VERTGUIDE, 296
+        TOPMARGIN, 1
+    END
+
+    IDD_COMPLETE_PAGE, DIALOG
+    BEGIN
+        RIGHTMARGIN, 310
+        VERTGUIDE, 115
+        BOTTOMMARGIN, 186
+        HORZGUIDE, 8
+        HORZGUIDE, 32
+        HORZGUIDE, 40
+        HORZGUIDE, 90
+        HORZGUIDE, 177
+    END
+
+    IDD_FILENAME_PAGE, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 310
+        VERTGUIDE, 21
+        VERTGUIDE, 296
+        TOPMARGIN, 1
+    END
+
+    IDD_AGREEMENT_PAGE, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 310
+        VERTGUIDE, 21
+        VERTGUIDE, 296
+        TOPMARGIN, 1
+    END
+
+    IDD_CONTACT_PAGE, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 310
+        VERTGUIDE, 21
+        VERTGUIDE, 296
+        TOPMARGIN, 1
+    END
+
+    IDD_SUMMARY_PAGE, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 310
+        VERTGUIDE, 21
+        VERTGUIDE, 296
+        TOPMARGIN, 1
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Bitmap
+//
+
+IDB_WATERMARK           BITMAP                  "res\\watermark.bmp"
+IDB_HEADER              BITMAP                  "res\\header.bmp"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE
+BEGIN
+    IDS_PROGRESS_WIZARD_CAPTION "Progress Wizard"
+    IDS_WELCOME_PAGE_CAPTION "Uploading File"
+    IDS_AGREEMENT_PAGE_CAPTION "Uploading File"
+    IDS_AGREEMENT_PAGE_TITLE "Why Upload your File to snopilot.com?"
+    IDS_PROGRESS_PAGE_CAPTION "Uploading File"
+    IDS_PROGRESS_PAGE_TITLE "Uploading your file to snopilot.com"
+    IDS_PROGRESS_PAGE_SUBTITLE "Please wait while your file is uploaded"
+    IDS_FORM_PAGE_CAPTION   "Uploading File"
+    IDS_FORM_PAGE_TITLE     "Choosing a file to upload"
+    IDS_FORM_PAGE_SUBTITLE  "Please enter the name of the file to be uploaded"
+END
+
+STRINGTABLE
+BEGIN
+    IDS_COMPLETE_PAGE_CAPTION "Uploading File"
+    IDS_AGREEMENT_PAGE_SUBTITLE "Please read the following agreement"
+    IDS_CONTACT_PAGE_CAPTION "Uploading File"
+    IDS_CONTACT_PAGE_TITLE  "Contact Details"
+    IDS_CONTACT_PAGE_SUBTITLE
+                            "Please enter your contact details.  If you prefer not to be contacted about this file, please check the Anonymous box"
+    IDS_SUMMARY_PAGE_CAPTION "Uploading File"
+    IDS_SUMMARY_PAGE_TITLE  "Upload Details"
+    IDS_SUMMARY_PAGE_SUBTITLE "Please check that these details are correct"
+    IDS_RESORT_PAGE_CAPTION "Uploading File"
+    IDS_RESORT_PAGE_TITLE   "Resort Details"
+    IDS_RESORT_PAGE_SUBTITLE "Please enter the resort details"
+    IDS_RESOLVING_NAME      "Looking for server..."
+    IDS_RESOLVED_NAME       "Found server."
+    IDS_CONNECTING_TO_SERVER "Connecting to server..."
+    IDS_CONNECTED_TO_SERVER "Connected to server."
+    IDS_RECEIVING_RESPONSE  "Waiting for response..."
+END
+
+STRINGTABLE
+BEGIN
+    AFX_IDS_APP_TITLE       "File Upload Wizard"
+END
+
+STRINGTABLE
+BEGIN
+    IDS_RECEIVED_RESPONSE   "Received response."
+    IDS_TRANSFER_SPEED_BYTES_PER_SEC "%d bytes/sec"
+    IDS_TRANSFER_SPEED_KB_PER_SEC "%2.1f KB/sec"
+    IDS_TRANSFER_SPEED_MB_PER_SEC "%2.1f MB/sec"
+    IDS_COMPRESS_PROGRESS   "Compressing File: %d%%"
+    IDS_UPLOAD_PROGRESS     "Uploading File: %s, %s."
+    IDS_UPLOAD_PROGRESS_PERCENT "Uploading File: %d%%"
+    IDS_UPLOADING_FILE_CAPTION "Uploading File"
+    IDS_EXPIRED             "Your copy of SnoTrack has expired.\r\nPlease check http://www.snopilot.com for details of how to upgrade."
+    IDS_FAILED_TO_OPEN      "Failed to open '%s'"
+    IDS_EMAIL_OR_FORUM_OR_ANON
+                            "At least one of the email address or forum username fields must be filled in.  Alternatively, choose the Anonymous option"
+    IDS_SUCCESSFUL_UPLOAD_TITLE "File upload completed successfully"
+    IDS_SUCCESSFUL_UPLOAD_MESSAGE "The file '%s' was successfully uploaded."
+    IDS_SUCCESSFUL_UPLOAD_PROMPT
+                            "Press 'Back' to upload another file, or 'Finish' to close this wizard."
+    IDS_FAILED_UPLOAD_TITLE "File upload failed"
+END
+
+STRINGTABLE
+BEGIN
+    IDS_FAILED_UPLOAD_MESSAGE
+                            "The file '%s' was not successfully uploaded.\r\nThe server reported %d (%s)."
+    IDS_CANCELLED_UPLOAD_TITLE "File upload cancelled"
+    IDS_CANCELLED_UPLOAD_MESSAGE "Uploading '%s' was cancelled."
+    IDS_FAILED_UPLOAD_MESSAGE2
+                            "The file '%s' was not successfully uploaded.\r\n%s"
+    IDS_FAILED_UPLOAD_PROMPT
+                            "Press 'Back' to try again, or 'Finish' to close this wizard."
+    IDS_OTHER_RESORT_FILENAME "(Other)"
+END
+
+#endif    // English (U.S.) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+/////////////////////////////////////////////////////////////////////////////
+// English (U.K.) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENG)
+#ifdef _WIN32
+LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_UK
+#pragma code_page(1252)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE
+BEGIN
+    "#define _AFX_NO_SPLITTER_RESOURCES\r\n"
+    "#define _AFX_NO_OLE_RESOURCES\r\n"
+    "#define _AFX_NO_TRACKER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)\r\n"
+    "LANGUAGE 9, 1\r\n"
+    "#pragma code_page(1252)\r\n"
+    "#include ""res\\PostFile.rc2""  // non-Microsoft Visual C++ edited resources\r\n"
+    "#include ""afxres.rc""         // Standard components\r\n"
+    "#endif\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDR_MAINFRAME           ICON                    "res\\PostFile.ico"
+#endif    // English (U.K.) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#define _AFX_NO_SPLITTER_RESOURCES
+#define _AFX_NO_OLE_RESOURCES
+#define _AFX_NO_TRACKER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+LANGUAGE 9, 1
+#pragma code_page(1252)
+#include "res\PostFile.rc2"  // non-Microsoft Visual C++ edited resources
+#include "afxres.rc"         // Standard components
+#endif
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+
