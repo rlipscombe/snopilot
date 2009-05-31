@@ -1,0 +1,66 @@
+Microsoft Visual Studio Solution File, Format Version 8.00
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "dump_garmin", "dump_garmin.vcproj", "{05CEE5D3-D256-4BB7-9ECD-6A2D155C6B94}"
+	ProjectSection(ProjectDependencies) = postProject
+		{FE3EC226-4550-4556-B095-ABD812FC065E} = {FE3EC226-4550-4556-B095-ABD812FC065E}
+		{02A08749-A67C-4074-9578-6EDF20B7DF64} = {02A08749-A67C-4074-9578-6EDF20B7DF64}
+		{D3E70C91-755B-4736-A738-A95BFA87B5C4} = {D3E70C91-755B-4736-A738-A95BFA87B5C4}
+	EndProjectSection
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "snopilot_core", "..\..\lib\core\snopilot_core.vcproj", "{02A08749-A67C-4074-9578-6EDF20B7DF64}"
+	ProjectSection(ProjectDependencies) = postProject
+	EndProjectSection
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "snopilot_test", "..\..\lib\test\snopilot_test.vcproj", "{FE3EC226-4550-4556-B095-ABD812FC065E}"
+	ProjectSection(ProjectDependencies) = postProject
+	EndProjectSection
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "snopilot_garmin", "..\..\lib\garmin\snopilot_garmin.vcproj", "{D3E70C91-755B-4736-A738-A95BFA87B5C4}"
+	ProjectSection(ProjectDependencies) = postProject
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfiguration) = preSolution
+		Debug = Debug
+		Debug Unicode = Debug Unicode
+		Release = Release
+		Release Unicode = Release Unicode
+	EndGlobalSection
+	GlobalSection(ProjectConfiguration) = postSolution
+		{05CEE5D3-D256-4BB7-9ECD-6A2D155C6B94}.Debug.ActiveCfg = Debug|Win32
+		{05CEE5D3-D256-4BB7-9ECD-6A2D155C6B94}.Debug.Build.0 = Debug|Win32
+		{05CEE5D3-D256-4BB7-9ECD-6A2D155C6B94}.Debug Unicode.ActiveCfg = Debug|Win32
+		{05CEE5D3-D256-4BB7-9ECD-6A2D155C6B94}.Debug Unicode.Build.0 = Debug|Win32
+		{05CEE5D3-D256-4BB7-9ECD-6A2D155C6B94}.Release.ActiveCfg = Release|Win32
+		{05CEE5D3-D256-4BB7-9ECD-6A2D155C6B94}.Release.Build.0 = Release|Win32
+		{05CEE5D3-D256-4BB7-9ECD-6A2D155C6B94}.Release Unicode.ActiveCfg = Release|Win32
+		{05CEE5D3-D256-4BB7-9ECD-6A2D155C6B94}.Release Unicode.Build.0 = Release|Win32
+		{02A08749-A67C-4074-9578-6EDF20B7DF64}.Debug.ActiveCfg = Debug|Win32
+		{02A08749-A67C-4074-9578-6EDF20B7DF64}.Debug.Build.0 = Debug|Win32
+		{02A08749-A67C-4074-9578-6EDF20B7DF64}.Debug Unicode.ActiveCfg = Debug|Win32
+		{02A08749-A67C-4074-9578-6EDF20B7DF64}.Debug Unicode.Build.0 = Debug|Win32
+		{02A08749-A67C-4074-9578-6EDF20B7DF64}.Release.ActiveCfg = Release|Win32
+		{02A08749-A67C-4074-9578-6EDF20B7DF64}.Release.Build.0 = Release|Win32
+		{02A08749-A67C-4074-9578-6EDF20B7DF64}.Release Unicode.ActiveCfg = Release|Win32
+		{02A08749-A67C-4074-9578-6EDF20B7DF64}.Release Unicode.Build.0 = Release|Win32
+		{FE3EC226-4550-4556-B095-ABD812FC065E}.Debug.ActiveCfg = Debug|Win32
+		{FE3EC226-4550-4556-B095-ABD812FC065E}.Debug.Build.0 = Debug|Win32
+		{FE3EC226-4550-4556-B095-ABD812FC065E}.Debug Unicode.ActiveCfg = Debug Unicode|Win32
+		{FE3EC226-4550-4556-B095-ABD812FC065E}.Debug Unicode.Build.0 = Debug Unicode|Win32
+		{FE3EC226-4550-4556-B095-ABD812FC065E}.Release.ActiveCfg = Release|Win32
+		{FE3EC226-4550-4556-B095-ABD812FC065E}.Release.Build.0 = Release|Win32
+		{FE3EC226-4550-4556-B095-ABD812FC065E}.Release Unicode.ActiveCfg = Release Unicode|Win32
+		{FE3EC226-4550-4556-B095-ABD812FC065E}.Release Unicode.Build.0 = Release Unicode|Win32
+		{D3E70C91-755B-4736-A738-A95BFA87B5C4}.Debug.ActiveCfg = Debug|Win32
+		{D3E70C91-755B-4736-A738-A95BFA87B5C4}.Debug.Build.0 = Debug|Win32
+		{D3E70C91-755B-4736-A738-A95BFA87B5C4}.Debug Unicode.ActiveCfg = Debug|Win32
+		{D3E70C91-755B-4736-A738-A95BFA87B5C4}.Debug Unicode.Build.0 = Debug|Win32
+		{D3E70C91-755B-4736-A738-A95BFA87B5C4}.Release.ActiveCfg = Release|Win32
+		{D3E70C91-755B-4736-A738-A95BFA87B5C4}.Release.Build.0 = Release|Win32
+		{D3E70C91-755B-4736-A738-A95BFA87B5C4}.Release Unicode.ActiveCfg = Release|Win32
+		{D3E70C91-755B-4736-A738-A95BFA87B5C4}.Release Unicode.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+	EndGlobalSection
+	GlobalSection(ExtensibilityAddIns) = postSolution
+	EndGlobalSection
+EndGlobal

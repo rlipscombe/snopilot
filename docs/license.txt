@@ -1,0 +1,19 @@
+A brief summary of the licensing/copyrights for the code and
+accompanying libraries and materials.
+
+* Unless otherwise noted, this source code (and other materials) is
+  Copyright (c) 2003 snopilot, http://www.snopilot.com
+* Portions of the code were originally Copyright (c) Roger Lipscombe,
+  http://www.differentpla.net/~roger/.
+  Permission has been granted to snopilot to non-exclusively use this
+  code for any purpose.
+* The lib/jpeg-6b library contains code from the Independent JPEG Group (IJG).
+  This code is licensed as noted in the accompanying README file.
+  In particular: "You can use this software for whatever you want.  You
+  don't have to pay us.".
+  The ansi2knr utility program in that directory is licensed under the GPL.
+  Since we're not going to be distributing it, or anything based on it,
+  that's not a problem.
+
+                                        -- roger (2003/11/05, IANAL)
+                                        
