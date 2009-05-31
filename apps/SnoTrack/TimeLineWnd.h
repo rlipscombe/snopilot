@@ -181,16 +181,37 @@ protected:
 
 struct RouteEventLessByStartTime
 {
+	bool operator() (const RouteEvent &lhs, const RouteEvent &rhs) const
+	{
+		return (CompareFileTime(&lhs.startTime, &rhs.startTime) < 0);
+	}
+
 	bool operator() (const RouteEvent &lhs, const FILETIME &rhs) const
 	{
 		return (CompareFileTime(&lhs.startTime, &rhs) < 0);
+	}
+
+	bool operator() (const FILETIME &lhs, const RouteEvent &rhs) const
+	{
+		return (CompareFileTime(&lhs, &rhs.startTime) < 0);
 	}
 };
 
 struct RouteEventLessByEndTime
 {
+	bool operator() (const RouteEvent &lhs, const RouteEvent &rhs) const
+	{
+		return (CompareFileTime(&lhs.endTime, &rhs.endTime) < 0);
+	}
+
 	bool operator() (const FILETIME &lhs, const RouteEvent &rhs) const
 	{
 		return (CompareFileTime(&lhs, &rhs.endTime) < 0);
 	}
+
+	bool operator() (const RouteEvent &lhs, const FILETIME &rhs) const
+	{
+		return (CompareFileTime(&lhs.endTime, &rhs) < 0);
+	}
+
 };
