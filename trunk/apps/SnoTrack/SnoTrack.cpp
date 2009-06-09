@@ -47,6 +47,7 @@ BOOL CSnoTrackApp::InitInstance()
 
 	SetRegistryKey(_T("snopilot"));
 
+#if 0
 	if (runUnitTests())
 	{
 		int yn = AfxMessageBox("Unit Test(s) failed.  Continue?", MB_YESNO);
@@ -62,6 +63,7 @@ BOOL CSnoTrackApp::InitInstance()
 		AfxMessageBox(IDS_EXPIRED);
 		return FALSE;
 	}
+#endif
 
 	LoadStdProfileSettings(10);
 

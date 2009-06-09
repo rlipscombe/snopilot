@@ -167,7 +167,7 @@ BOOL CTimeLineView::OnCmdMsg(UINT nID, int nCode, void* pExtra, AFX_CMDHANDLERIN
 		{
 			CChildFrame *pFrame = static_cast<CChildFrame *>(GetParentFrame());
 			CCartesianView *pView = pFrame->GetCartesianView();
-			if (pView->OnCmdMsg(nID, nCode, pExtra, pHandlerInfo))
+			if (pView && pView->OnCmdMsg(nID, nCode, pExtra, pHandlerInfo))
 				return TRUE;
 		}
 	}

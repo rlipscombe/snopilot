@@ -9,8 +9,6 @@
 /////////////////////////////////////////////////////////////////////////////
 // Add manually edited resources here...
 
-CREATEPROCESS_MANIFEST_RESOURCE_ID	RT_MANIFEST	"res\\SnoTrack.manifest"
-
 /////////////////////////////////////////////////////////////////////////////
 //
 // Version
@@ -39,7 +37,7 @@ BEGIN
             VALUE "FileDescription", "snotrack"
             VALUE "FileVersion", FILEVERSION_STRING
             VALUE "InternalName", "SnoTrack.exe"
-            VALUE "LegalCopyright", "Copyright (c) 2003-2004 snopilot.  All rights reserved."
+            VALUE "LegalCopyright", "Copyright (c) 2003-2009 snopilot.  All rights reserved."
             VALUE "OriginalFilename", "SnoTrack.exe"
             VALUE "ProductName", "snotrack"
             VALUE "ProductVersion", PRODUCTVERSION_STRING
