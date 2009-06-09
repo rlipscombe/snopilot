@@ -1270,10 +1270,6 @@
 				>
 			</File>
 			<File
-				RelativePath=".\res\SnoTrack.manifest"
-				>
-			</File>
-			<File
 				RelativePath=".\SnoTrack.rc"
 				>
 			</File>
